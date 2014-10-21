@@ -1,0 +1,207 @@
+@font-face {
+    font-family: "duckHunt";
+    src: url("duckhunt.ttf");
+}
+
+#win {
+    font-family: 'duckhunt', sans-serif;
+    outline: none;
+    top: 130px;
+    left: 13%;
+    width: 480px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 60px;
+    border: 83d313 solid 4px;
+    border-radius: 5px;
+    position: absolute;
+    color: white;
+    z-index: 7;
+    background-color: black;
+    visibility: hidden;
+/*    text-align: center;*/
+}
+
+#lose {
+    font-family: 'duckhunt', sans-serif;
+    outline: none;
+    top: 130px;
+    left: 2%;
+    width: 600px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 60px;
+    border: 83d313 solid 4px;
+    border-radius: 5px;
+    position: absolute;
+    color: white;
+    z-index: 7;
+    background-color: black;
+    visibility: hidden;
+}
+
+#sky {
+    background-color: #59add9;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 1;
+    position: absolute;
+}
+
+#dogBushes {
+    width: 115px;
+    height: 102px;
+    top: 85%; /*65 for out*/
+    left: 40%;  
+    position: absolute;
+}
+
+#play-area {
+    width: 635px;
+    height: 450px;
+    top: 0px;
+    z-index: 2;
+    position: absolute;
+    cursor: crosshair;
+}
+
+#blue-duck {
+    width: 100px;
+    height: 94px;
+    z-index: 3;
+    background-size: 100%;
+    position: absolute;
+    top: 87%;
+    left: 40%;    
+}
+
+#duckHunt {
+    background-size: 100%;
+/*    254x238*/
+    width: 635px;
+    height: 595px;
+    border: black solid 4px;
+    margin: auto;
+    position: relative;
+    border-radius: black solid 5px;
+/*    z-index: 8;
+    */
+    overflow: hidden;
+}
+
+#duckHuntBackground {
+    background: url("images/duckHuntBackground.png");
+    background-size: 100%;
+/*    254x238*/
+    width: 635px;
+    height: 595px;
+    z-index: 4;
+    position: absolute;
+    pointer-events: none;
+}
+
+#title {
+    background: url("images/title.png");
+    width: 635px;
+    height: 595px;
+    background-size: 100%;
+    position: absolute;
+    z-index: 6;
+    top: 0;
+}
+
+#play-button {
+    font-family: 'duckhunt', sans-serif;
+    outline: none;
+    top: 400px;
+    left: 32%;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 60px;
+    border: none;
+    position: absolute;
+    color: white;
+    z-index: 7;
+    background-color: Transparent;
+}
+
+#main-panel {
+    width: 291px;
+    height: 54px;    
+    border: 83d313 solid 4px;
+    bottom: 35px;
+    left: 151px;
+    position: absolute;
+    border-radius: 5px;
+    color: white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;   
+    z-index: 5;
+}
+
+#main {
+    top: 5px;
+    left: 3px;
+    position: absolute;
+}
+
+#shot-panel {
+    color: white;
+    width: 74px;
+    height: 54px;
+    background-color: black;
+    border: 83d313 solid 4px;
+    bottom: 35px;
+    left: 52px;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+#shot {
+    top: 3px;
+    width: 74px;
+    position: absolute;
+}
+
+#score-panel {
+    font-family: 'duckhunt', sans-serif;
+    font-size: 21px;
+    padding: 5px;
+    color: white;
+    width: 121px;
+    height: 44px;
+    background-color: black;
+    border: 83d313 solid 4px;
+    bottom: 35px;
+    right: 35px;;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 5;
+}
+
+#score {
+    top: 5px;
+    position: absolute;
+}
+
+body {
+    background-color: #435174;   
+}
+
+#duckHunt {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
