@@ -1,0 +1,130 @@
+body {
+     font-family: 'Lato', sans-serif;
+}
+a {
+     color: #d6e1ef;
+}
+a:hover {
+     color: white;
+     text-decoration: none;
+}
+.header {
+     min-height: 250px;
+     text-align: center;
+     font-size: 65px;
+     color: #e3e3f8;
+
+     font-family: 'Lato', sans-serif;
+     font-weight: 400;
+/*     display: inline;*/
+}
+.header-row {
+     background-color: #466a93;
+}
+.header-thin {
+     font-weight: 100;
+     display: inline;
+}
+.portfolio-navbar {
+/*     min-height: 50px;*/
+     text-align: center;
+     color: white;
+     font-size:25px;
+/*
+     display: inline-block;
+     vertical-align: middle;
+*/
+}
+.portfolio-navbar-row {
+     background-color: #24456c;
+     font-weight: 100;
+}
+.portfolio-navbar-bottom {
+/*     min-height: 50px;*/
+     text-align: center;
+     color: white;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     font-size:25px;
+/*
+     display: inline-block;
+     vertical-align: middle;
+*/
+}
+.portfolio-navbar-row-bottom {
+
+     background-color: #466a93;
+     font-weight: 100;
+}
+.project-one-row {
+     min-height: 400px;
+     background-color: #e3e3f8;
+}
+.project-two-row {
+     in-height: 400px;
+     background-color: #24456c;
+}
+.project-one {
+     min-height: 400px;
+}
+.portfolio-image {
+     max-width: 370px;
+/*     min-width: 370px;*/
+/*     width: 250px;*/
+
+}
+.first-image {
+     margin-right: 15px;
+     float: left;
+}
+.second-image {
+     margin-left: 15px;
+     float: right;
+}
+.language {
+     font-size: 12px;
+     padding-bottom: 5px;
+}
+.portfolio-description-panel {
+     margin-top: 25px;
+/*     margin-left: -50px;*/
+     min-height: 450px;
+     background-color: #466a93;
+     border-radius: 5px;
+     color: white;
+}
+.portfolio-description {
+     min-height: 290px;
+     padding: 25px;
+     font-size: 25px;
+}
+.portfolio-description-header {
+     text-align: center;
+     font-size: 25px;
+     background-color: #24456c;
+}
+.portfolio-description-header-two {
+     text-align: center;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     font-size: 25px;
+     color: #24456c;
+     background-color: #e3e3f8;
+}
+#duckhunt {
+/*     width: 20px;*/
+}
+.project-left, .project-right {
+     min-height: 400px;
+}
+.project-panel {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     background-color: #466a93;
+/*     opacity: .4;*/
+/*     border-radius: 0px;*/
+}
+.project-panel-heading {
+     background-color: #24456c;
+     color: white;
+}
