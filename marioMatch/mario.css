@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "nintendo";
+    src: url("nintendo.ttf");
+}
+html, body {
+    width: 100%;
+    background: #3873f8;
+    font-family: "Arial", sans-serif;
+}
+#game {
+     margin-top: 50px;
+}
+.win {
+    width:  290px;
+    height: auto;
+    left: 50%;
+    top: 250px;;
+    margin-left: -145px;
+    z-index: 8;
+    position: absolute;
+    color: white;
+    background-color: black;
+    border: red solid 7px;
+    text-align: center;
+    font-family: 'nintendo', sans-serif;
+    font-size: 35px;
+    padding: 5px;
+}
+#mario {
+    background-image: url("images/marioWalk.gif");
+    width: 75px;
+    height: 99px;
+    background-size: 100%;
+    position: absolute;
+    top: -5px;
+    left: -95px;
+}
+#luigi {
+    background-image: url("images/luigiWalk.gif");
+    width: 75px;
+    height: 99px;
+    background-size: 100%;
+    position: absolute;
+    top: -5px;
+    left: 510px;
+}
+#retry:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+table {
+    width: 712.5px;
+    height: 562.5px;
+    background-size: 100%;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+.intro {
+    background: url("images/intro.png");
+    width: 750px;
+    height: 644.25px;
+    z-index: 2;
+    position: absolute;
+    margin: 0 auto;
+    background-size: 100%;
+}
+.tableHolder {
+    width: 750px;
+    height: 644.25px;
+    background: url(images/cardsbackground.png);
+    margin: 0 auto;
+    background-size: 100%;
+    overflow: hidden;
+}
+td {
+    text-align: center;
+}
+#start {
+    font-family: 'nintendo', sans-serif;
+    font-size: 28px;
+    border: #fc9838 solid 7px;
+    background-color: white;
+    width: 180px;
+    height: 100px;
+    top: 600px;
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+    border-radius: 5px;
+}
+button:hover {
+    opacity: 0.75;
+}
+img {
+    width: 73.5px;
+    height: 105.75px;
+    background-size: 100%;
+    border: none;
+    background-image:
+    url("images/spade.png");
+}
+#time, #score {
+    display: inline;
+    width: 50px;
+}
+img:hover {
+    border: red solid 5px;
+    margin: -5px;
+}
+#scoreboard {
+    text-align: center;
+    padding: 20px;
+    font-family: 'nintendo', sans-serif;
+    font-size: 28px;
+    color: white;
+    background-color: black;
+    border: red solid 5px;
+    top: 750px;
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    width: 450px;
+    height: 50px;
+}
