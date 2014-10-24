@@ -1,0 +1,134 @@
+
+@light: #718DB6; //#e3e3f8
+@medium: #375A8D; //#466a93
+@dark: #193764; //#24456c
+@white: #E2E7EF;
+body {
+    font-family: 'Lato', sans-serif;
+}
+a {
+    color: @white;
+}
+a:hover {
+    color: @white;
+    text-decoration: none;
+//    font-weight: 400;
+}
+.header {
+    min-height: 250px;
+    //max-height: 200px;
+    text-align: center;
+    font-size: 65px;
+    color: @white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.header-row {
+    background-color: @medium;
+}
+.header-thin {
+    font-weight: 100;
+    display: inline;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.portfolio-navbar {
+    text-align: center;
+    color: @white;
+    font-size: 25px;
+}
+.portfolio-navbar-row {
+    background-color: @dark;
+    font-weight: 100;
+}
+.portfolio-navbar-bottom {
+    text-align: center;
+    color: @white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.portfolio-navbar-row-bottom {
+    background-color: @dark;
+    font-weight: 100;
+}
+.project-one-row {
+    min-height: 400px;
+    background-color: @light;
+}
+.project-two-row {
+    min-height: 400px;
+    background-color: @dark;
+}
+.project-one {
+    min-height: 400px;
+}
+.portfolio-image {
+    max-width: 370px;
+}
+.img-overlay {
+//    width: 85%;
+//    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+//    position: absolute;
+    z-index: 2;
+}
+.portfolio-image:hover {
+    opacity: .65;
+}
+.first-image {
+    margin-right: 15px;
+    float: left;
+}
+.second-image {
+    margin-left: 15px;
+    float: right;
+}
+.language {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.portfolio-description-panel {
+    margin-top: 25px;
+    min-height: 450px;
+    background-color: @medium;
+    border-radius: 5px;
+    box-shadow: 0px 5px 0px @dark;
+    color: @white;
+
+}
+.portfolio-description {
+    min-height: 290px;
+    padding: 25px;
+    font-size: 25px;
+}
+.portfolio-description-header {
+    text-align: center;
+    font-size: 25px;
+    background-color: @dark;
+
+}
+.portfolio-description-header-two {
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 25px;
+    color: @dark;
+    background-color: @light;
+}
+#duckhunt {} .project-left,
+.project-right {
+    min-height: 400px;
+}
+.project-panel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: @medium;
+
+}
+.project-panel-heading {
+    background-color: @dark;
+    color: @white;
+}

@@ -3,71 +3,60 @@ body {
   font-family: 'Lato', sans-serif;
 }
 a {
-  color: #e2e7ef;
+  color: #6388b7;
 }
 a:hover {
-  color: #e2e7ef;
+  color: #89a9d2;
   text-decoration: none;
 }
 .header {
   min-height: 250px;
   text-align: center;
   font-size: 65px;
-  color: #e2e7ef;
+  color: #6388b7;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 .header-row {
-  background-color: #375a8d;
+  background-color: #476d9e;
 }
 .header-thin {
   font-weight: 100;
   display: inline;
-  border: 1px solid white;
-  padding: 10px;
-  border-radius: 5px;
 }
 .portfolio-navbar {
   text-align: center;
-  color: #e2e7ef;
+  color: #89a9d2;
   font-size: 25px;
 }
 .portfolio-navbar-row {
-  background-color: #193764;
+  background-color: #214777;
   font-weight: 100;
 }
 .portfolio-navbar-bottom {
   text-align: center;
-  color: #e2e7ef;
+  color: #89a9d2;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 25px;
 }
 .portfolio-navbar-row-bottom {
-  background-color: #193764;
+  background-color: #476d9e;
   font-weight: 100;
 }
 .project-one-row {
   min-height: 400px;
-  background-color: #718db6;
+  background-color: #6388b7;
 }
 .project-two-row {
   min-height: 400px;
-  background-color: #193764;
+  background-color: #214777;
 }
 .project-one {
   min-height: 400px;
 }
 .portfolio-image {
   max-width: 370px;
-}
-.img-overlay {
-  vertical-align: middle;
-  text-align: center;
-  z-index: 2;
-}
-.portfolio-image:hover {
-  opacity: .65;
 }
 .first-image {
   margin-right: 15px;
@@ -84,10 +73,9 @@ a:hover {
 .portfolio-description-panel {
   margin-top: 25px;
   min-height: 450px;
-  background-color: #375a8d;
+  background-color: #476d9e;
   border-radius: 5px;
-  box-shadow: 0px 5px 0px #193764;
-  color: #e2e7ef;
+  color: #89a9d2;
 }
 .portfolio-description {
   min-height: 290px;
@@ -97,15 +85,15 @@ a:hover {
 .portfolio-description-header {
   text-align: center;
   font-size: 25px;
-  background-color: #193764;
+  background-color: #214777;
 }
 .portfolio-description-header-two {
   text-align: center;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   font-size: 25px;
-  color: #193764;
-  background-color: #718db6;
+  color: #214777;
+  background-color: #6388b7;
 }
 .project-left,
 .project-right {
@@ -114,9 +102,9 @@ a:hover {
 .project-panel {
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #375a8d;
+  background-color: #476d9e;
 }
 .project-panel-heading {
-  background-color: #193764;
-  color: #e2e7ef;
+  background-color: #214777;
+  color: #89a9d2;
 }
