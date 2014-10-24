@@ -20,12 +20,16 @@ a:hover {
 .header-row {
   background-color: #375a8d;
 }
+.tj {
+  display: inline;
+}
 .header-thin {
   font-weight: 100;
   display: inline;
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
+  box-shadow: 8px 8px 0px #193764;
 }
 .portfolio-navbar {
   text-align: center;
