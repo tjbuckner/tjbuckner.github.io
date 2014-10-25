@@ -2,7 +2,12 @@
 @light: #718DB6; //#e3e3f8
 @medium: #375A8D; //#466a93
 @dark: #193764; //#24456c
+@light-comp: #F1D783; //FFE5BA
+@medium-comp: #CDA425; //CB8B1F
+@dark-comp: #B18A0D; //B27208
 @white: #E2E7EF;
+@duckhunt-shadow: #655400; //#8B7300
+@mario-shadow: #950b00; //#D31000
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -25,6 +30,8 @@ a:hover {
 }
 .header-row {
     background-color: @medium;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 .tj {
     display: inline;
@@ -59,7 +66,7 @@ a:hover {
 }
 .project-one-row {
     min-height: 400px;
-    background-color: @light;
+    background-color: @light-comp;
 }
 .project-two-row {
     min-height: 400px;
@@ -82,13 +89,41 @@ a:hover {
 .portfolio-image:hover {
     opacity: .65;
 }
+.title-bar-row {
+//    min-height: 250px;
+    font-weight: 100;
+    color: white;
+    font-size: 150px;
+    background-color: @medium;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 5px 5px 0px @dark;
+//    box-shadow: 0px 5px 0px @dark;
+}
+.title-bar-row-programs {
+//    min-height: 250px;
+    font-weight: 100;
+    color: white;
+    font-size: 150px;
+    background-color: @medium;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 5px 5px 0px @dark;
+//    box-shadow: 0px 5px 0px @dark;
+}
+.title-bar-border {
+    background-color: @dark;
+    min-height: 10px;
+}
 .first-image {
     margin-right: 15px;
     float: left;
+    box-shadow: 0px 5px 0px @duckhunt-shadow;
 }
 .second-image {
     margin-left: 15px;
     float: right;
+    box-shadow: 0px 5px 0px @mario-shadow;
 }
 .language {
     font-size: 12px;
@@ -97,9 +132,9 @@ a:hover {
 .portfolio-description-panel {
     margin-top: 25px;
     min-height: 450px;
-    background-color: @medium;
+    background-color: @medium-comp;
     border-radius: 5px;
-    box-shadow: 0px 5px 0px @dark;
+    box-shadow: 0px 5px 0px @dark-comp;
     color: @white;
 }
 .portfolio-description {
@@ -110,7 +145,9 @@ a:hover {
 .portfolio-description-header {
     text-align: center;
     font-size: 25px;
-    background-color: @dark;
+    background-color: @dark-comp;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 .portfolio-description-header-two {
     text-align: center;

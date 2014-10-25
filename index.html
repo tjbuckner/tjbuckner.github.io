@@ -15,6 +15,21 @@
 <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <script>
+        $(document).ready(function () {
+//            $("#games-row").hide();
+//            $("#programs-row").hide();
+
+//            $("#games-header").on("click", function () {
+//                $("#games-row").slideToggle();
+//            });
+
+            ("#programs-header").on("click", function () {
+                $("#programs-row").slideToggle();
+            });
+
+        });
+    </script>
 </head>
 
 <body>
@@ -22,8 +37,10 @@
     <div class="container-fluid">
         <div class="row header-row">
             <div class="col-md-6 col-md-offset-3 header">
-                <br><div class="tj">TJ
-                <div class="header-thin">Buckner</div></div>
+                <br>
+                <div class="tj">TJ
+                    <div class="header-thin">Buckner</div>
+                </div>
             </div>
 
         </div>
@@ -31,7 +48,12 @@
             <div class="col-md-6 col-md-offset-3 portfolio-navbar"><a href="mailto:teejay.buckner@gmail.com">teejay.buckner@gmail.com</a> | <a href="files/TJBuckner_Resume.pdf">resume</a>
             </div>
         </div>
-        <div class="row project-one-row">
+<!--------------------------------------------------------------------------------------        GAMES BEGIN              -------------------------------------------------------------->
+        <div class="row title-bar-row" id="games-header">
+            <div class="col-md-6 col-md-offset-3 title-bar">GAMES</div><br>
+            <div class="title-bar-border"></div>
+        </div>
+        <div class="row project-one-row" id="games-row">
             <div class="col-md-6 col-md-offset-3">
 
 
@@ -65,8 +87,35 @@
                 </div>
             </div>
         </div>
-        <div class="row portfolio-navbar-row-bottom">
-            <div class="col-md-6 col-md-offset-3 portfolio-navbar-bottom"><a href="mailto:teejay.buckner@gmail.com">teejay.buckner@gmail.com</a> | <a href="files/TJBuckner_Resume.pdf">resume</a>
+<!--------------------------------------------------------------------------------------        GAMES END               -------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------        PROGRAMS BEGIN          -------------------------------------------------------------->
+
+<!--
+        <div class="row title-bar-row-programs" id="programs-header">
+            <div class="col-md-6 col-md-offset-3 title-bar">PROGRAMS</div><br>
+            <div class="title-bar-border"></div>
+        </div>
+        <div class="row project-one-row" id="programs-row">
+            <div class="col-md-6 col-md-offset-3">
+
+
+                <div class="panel portfolio-description-panel">
+                    <div class="panel-header portfolio-description-header">JUNKYARD SCRAPER
+                        <div class="language">-JAVA-</div>
+                    </div>
+                    <div class="portfolio-description">
+                        <a href="duckHunt/">
+                            <img class="img-responsive img-rounded portfolio-image first-image" src="images/duckhunt.png">
+                        </a>
+                        Program that scrapes the tables of a local scrapyard's website, compiles the results, and displays them.
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+<!--------------------------------------------------------------------------------------        PROGRAMS END          -------------------------------------------------------------->
+        <div class="row portfolio-navbar-row">
+            <div class="col-md-6 col-md-offset-3 portfolio-navbar"><a href="mailto:teejay.buckner@gmail.com">teejay.buckner@gmail.com</a> | <a href="files/TJBuckner_Resume.pdf">resume</a>
             </div>
         </div>
     </div>
