@@ -55,7 +55,7 @@ a:hover {
 }
 .project-one-row {
   min-height: 400px;
-  background-color: #f1d783;
+  background-color: #718db6;
 }
 .project-two-row {
   min-height: 400px;
@@ -114,9 +114,9 @@ a:hover {
 .portfolio-description-panel {
   margin-top: 25px;
   min-height: 450px;
-  background-color: #cda425;
+  background-color: #375a8d;
   border-radius: 5px;
-  box-shadow: 0px 5px 0px #b18a0d;
+  box-shadow: 0px 5px 0px #193764;
   color: #e2e7ef;
 }
 .portfolio-description {
@@ -127,7 +127,7 @@ a:hover {
 .portfolio-description-header {
   text-align: center;
   font-size: 25px;
-  background-color: #b18a0d;
+  background-color: #193764;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
