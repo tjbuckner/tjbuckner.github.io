@@ -78,11 +78,14 @@ a:hover {
 .title-bar-row {
   font-weight: 100;
   color: white;
-  font-size: 150px;
+  font-size: 80px;
   background-color: #375a8d;
   text-align: center;
   cursor: pointer;
   text-shadow: 5px 5px 0px #193764;
+}
+.mario-panel {
+  padding-top: -10px;
 }
 .title-bar-row-programs {
   font-weight: 100;
