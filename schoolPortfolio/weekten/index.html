@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>TJ Buckner's Portfolio Week Ten - SQL PHP Phonebook</title>
+    <link rel="stylesheet/less" type="text/css" href="../style.less" />
+    <script src="../less.js" type="text/javascript"></script>
+</head>
+
+<body class="body">
+    <script>
+        var colors = ["#394958", "#643939", "#477752", "#796347", "#456767", "#508181"]
+
+        var repeat = 1;
+
+        function changeColor() {
+            if (repeat >= colors.length) {
+                repeat = 0;
+            }
+
+            document.body.style.backgroundColor = colors[repeat++];
+        }
+    </script>
+
+
+    <div class="menu">
+        <a class="menu-buttons
+                  first" href="http://ps11.pstcc.edu/~cs2230a09/about.html">tj.buckner</a>
+        <a class="menu-buttons" href="http://ps11.pstcc.edu/~c2230a09/">home </a>
+        <a class="menu-buttons">assignments</a>
+        <a class="menu-buttons" onclick="changeColor();">
+            <img src="">theme</a>
+    </div>
+
+    <div class="main">
+        <div class="pretty-form">
+            <h2>Assignent: Week 10 SQL PHP Phone Book<br>Date Due: 11/03/2014<br>TJ Buckner</h2>
+            <p>This week our assignment was to remake our phone book from last week using MySQL instead of file handling. This was a lot simpler, unlike last week where a lot of time was spent deciding how to best interact with the file. SQL statements were used instead to list, add, modify, and delete. SQL has all of this already built in so it really sped up the process.</p>
+
+                <p>Here's the link:
+            <a href="phoneBook/list.php">SQL PHP Phone Book</a></p>
+            <p>Here's the link to my blog post about this assignment: <a href="http://blogs.pstcc.edu/tjbuckner/2014/11/02/95/">link.</a></p>
+                <br>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="main footer">
+        <div class="pretty-form">
+            <center>
+                TJ Buckner | <a href="mailto:teejay.buckner@gmail.com">
+                teejay.buckner@gmail.com</a> | <a href="http://ps11.pstcc.edu/~c2230a09/files/TJBuckner_Resume.pdf" target="_blank">resume</a> | <a href="http://blogs.pstcc.edu/tjbuckner/">blog</a>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>

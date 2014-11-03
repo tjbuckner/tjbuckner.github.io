@@ -1,0 +1,50 @@
+body {
+    background-color: #375a8d;
+}
+.panel-default {
+    margin-top: 50px;
+    box-shadow: 0px 5px 0px #20334e;
+}
+th {
+    text-align: center;
+    background-color: #b7b7b7;
+}
+td {
+    background-color: #eaeaea;
+}
+.panel-heading {
+    font-weight: 800;
+    text-align: center;
+}
+input[value="INSERT"],
+input[value="ADD NEW"],
+input[value="SUBMIT"] {
+    background-color: #27a227;
+    border: 2px solid #1b5c1b;
+    box-shadow: 0px 5px 0px #1b5c1b;
+    width: 100%;
+    height: 50px;
+}
+input[value="DELETE"] {
+    background-color: #b70c0c;
+    border: 2px solid #5d0404;
+    box-shadow: 0px 5px 0px #5d0404;
+    display: block;
+    margin : 0 auto;
+    margin-bottom: 10px;
+/*    display: inline;*/
+}
+input[value="MODIFY"] {
+    background-color: #344cd0;
+    border: 2px solid #132589;
+    box-shadow: 0px 5px 0px #132589;
+    display: block;
+    margin : 0 auto;
+    margin-bottom: 5px;
+/*    display: inline;*/
+}
+input {
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}

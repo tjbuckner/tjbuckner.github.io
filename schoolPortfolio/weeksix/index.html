@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>TJ Buckner's Portfolio Week Six - jQuery</title>
+    <link rel="stylesheet/less" type="text/css" href="../style.less" />
+    <script src="../less.js" type="text/javascript"></script>
+</head>
+
+<body class="body">
+    <script>
+        var colors = ["#394958", "#643939", "#477752", "#796347", "#456767", "#508181"]
+
+        var repeat = 1;
+
+        function changeColor() {
+            if (repeat >= colors.length) {
+                repeat = 0;
+            }
+
+            document.body.style.backgroundColor = colors[repeat++];
+        }
+    </script>
+
+
+    <div class="menu">
+        <a class="menu-buttons
+                  first" href="http://ps11.pstcc.edu/~cs2230a09/about.html">tj.buckner</a>
+        <a class="menu-buttons" href="http://ps11.pstcc.edu/~c2230a09/">home </a>
+        <a class="menu-buttons">assignments</a>
+        <a class="menu-buttons" onclick="changeColor();">
+            <img src="">theme</a>
+    </div>
+
+    <div class="main">
+        <div class="pretty-form">
+            <h2>Assignent: Week 6 jQuery<br>Date Due: 10/12/2014<br>TJ Buckner</h2>
+            <p>This week we were tasked with making a game in jQuery. Honestly, I went a little overboard. I had a lot of fun with this, though. This is the first time I've made anything like this, and I'm really happy with how it turned out. Other than the randomized movement of the duck (which stackoverflow helped with), I was able to write all of this on my own.</p>
+                <p>Anyway, here's the link:
+            <a href="duckHunt/">DUCK HUNT!!</a></p>
+            <p>And here's the link to my blog post about this assignment: <a href="http://blogs.pstcc.edu/tjbuckner/2014/10/12/csit2230-week-seven/">link.</a></p>
+                <br>
+<!--
+                <br>Want to read more? Here's a link to my blog post on this assignment:
+                <a href="http://blogs.pstcc.edu/tjbuckner/2014/09/07/csit-2230-week-
+                         two/">link</a>.
+-->
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="main footer">
+        <div class="pretty-form">
+            <center>
+                TJ Buckner | <a href="mailto:teejay.buckner@gmail.com">
+                teejay.buckner@gmail.com</a> | <a href="http://ps11.pstcc.edu/~c2230a09/files/TJBuckner_Resume.pdf" target="_blank">resume</a> | <a href="http://blogs.pstcc.edu/tjbuckner/">blog</a>
+            </center>
+        </div>
+    </div>
+</body>
+
+</html>
