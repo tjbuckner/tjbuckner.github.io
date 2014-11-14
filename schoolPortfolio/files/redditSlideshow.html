@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Reddit Slideshow</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="redditSlideshow.css">
+    <script>
+        var firstSearch = true;
+        var index = 0;
+        var subreddit;
+        var urlToSearch = "http://www.reddit.com/r/" + subreddit + "/top.json?limit=100";
+        var newPlacement = "";
+        var queries = 0;
+
+        $(document).ready(function () {
+            $("img").error(function () {
+                $(this).hide();
+            });
+
+            $('img').hover(function () {
+                $(this).css({
+                    "maxheight": "100%",
+                    "minheight": "100%"
+                })
+            });
+        });
+
+        $("input").keypress(function (e) { //$("#text")
+            if (e.which == 13) {
+                getImages();
+            }
+        });
+
+        function getImages() {
+                clearImages();
+                subreddit = $('#subreddit').val();
+
+
+            firstSearch = false;
+
+            redditJSON();
+//            console.log(newPlacement);
+//            redditJSON(newPlacement);
+//            console.log(newPlacement);
+//            redditJSON(newPlacement);
+//            console.log(newPlacement);
+//            redditJSON(newPlacement);
+
+        }
+
+        function redditJSON() {
+            $.getJSON("http://www.reddit.com/r/" + subreddit + "/top/.json?limit=100&t=all" + newPlacement , function (data) {
+
+
+                $.each(data.data.children, function (i, item) { //data.data.children
+
+                    var urlString = item.data.url;
+                    //if the url isn't an album
+                    if (urlString.indexOf("/a/") < 0) {
+                        if ((urlString.indexOf(".png") < 0) && (urlString.indexOf(".jpg") < 0)) { // && (urlString.indexOf(".jpg") < 0)
+                            urlString = urlString + ".png";
+                        }
+
+                        $("<img/>").attr("src", urlString).appendTo("#images");
+                    }
+//                    console.log(i);
+                    if (i == 99) {
+
+                        newPlacement = "&after=" + item.data.name;
+                        console.log(queries);
+                        queries++;
+                        if (queries < 2)
+                        redditJSON(newPlacement);
+
+                    }
+                });
+
+            });
+
+
+        }
+
+        function clearImages() {
+            $("img").remove();
+        }
+    </script>
+
+    <!--[if IE]>
+        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="col-md-3">
+            <div class="panel panel-primary" id="controlPanel">
+                <div class="panel-heading" id="controlPanelHeading">Control Panel</div>
+                <div class="panel-body">
+                    <input type="text" id="subreddit" value="pics">
+                    <button id="submit" onclick="getImages()">SUBMIT</button>
+                    <button id="clear" onclick="clearImages()">CLEAR</button>
+
+                </div>
+            </div>
+        </div>
+        <div id="images"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

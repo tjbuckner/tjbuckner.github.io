@@ -1,0 +1,109 @@
+//out: boondoggle.css
+
+@bg-color: @other-month-color; //#4a6086
+@panel-color: #ca4242; //#428bca
+@other-month-color: #882525; //#459eeb
+@hover-color: #e66060; //#7bb8e
+@separator-color: #de5858;
+
+.row {
+      margin-top: 15px;
+     margin-bottom: 10px;
+}
+.calendar-heading {
+     text-align: center;
+     font-weight: bold;
+     font-size: 20px;
+     background-color: @panel-color !important;
+     background-image: none !important;
+     border-bottom-width: 5px !important;
+     border-color: @separator-color !important;
+}
+.navbar-default {
+     background-image: none !important;
+     background-color: @panel-color;
+     border-radius: 0px;
+     border-bottom-width: 5px;
+     border-color: @separator-color !important;
+}
+.panel-day {
+     min-height: 125px;
+     border-bottom: 5px solid @panel-color !important;
+     border-color: @panel-color !important;
+}
+.panel-heading, .panel-primary {
+     border-color: @panel-color !important;
+//     border-bottom-width: 5px !important;
+//     border-color: @separator-color !important;
+}
+.panel-day .panel-heading {
+     text-align: right;
+     font-weight: bold;
+     max-height: 35px;
+     font-size: 12px;
+     background-color: @panel-color !important;
+     background-image: none !important;
+//     border-color: @panel-color !important;
+     border-bottom-width: 5px !important;
+     border-color: @separator-color !important;
+}
+.calendar-panel {
+     border-bottom: 5px solid @panel-color;
+     border-bottom-left-radius: 5px !important;
+     border-bottom-right-radius: 5px !important;
+//     color: white !important;
+}
+.active {
+//     background-color: @other-month-color;
+}
+.active > a {
+     background-color: @other-month-color !important;
+     background-image: none !important;
+     color: white !important;
+}
+a {
+     color: white !important;
+}
+table {
+/*     border: 2px solid @panel-color;*/
+/*     border-bottom: 3px solid @panel-color;*/
+/*     border-bottom-left-radius: 15px !important;*/
+/*     border-bottom-right-radius: 15px !important;*/
+}
+.logo {
+     font-family: 'Pacifico', cursive;
+     color: white !important;
+}
+th {
+     text-align: center;
+     background-color: @panel-color;
+     color: white;
+//     border-bottom-width: 5px !important;
+//     border-color: @separator-color !important;
+}
+td {
+     padding-top: 5px !important;
+     padding-bottom: 5px !important;
+     padding-left: 5px !important;
+     padding-right: 5px !important;
+}
+.panel {
+     margin-bottom: 0px !important;
+}
+.other-month {
+     background-color: @other-month-color;
+     color: white;
+}
+.other-month:hover, .panel-day:hover {
+     background-color: @hover-color;
+     cursor: pointer;
+     color: white;
+}
+body {
+     background-color: @bg-color;
+     font-family: 'Roboto', sans-serif;
+}
+.table-panel-body {
+     padding-bottom: 0px;
+     margin-bottom: -10px;
+}
