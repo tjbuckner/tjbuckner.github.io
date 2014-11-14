@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="redditSlideshow.css">
+    <!-- bxSlider Javascript file -->
+<script src="jquery.bxslider.js"></script>
+<!-- bxSlider CSS file -->
+<link href="jquery.bxslider.css" rel="stylesheet" />
     <script>
         var firstSearch = true;
         var index = 0;
@@ -45,6 +49,10 @@
             firstSearch = false;
 
             redditJSON();
+
+            $("img").wrap(document.createElement("li"));
+            $('.bxslider').bxSlider();
+            console.log("FINISHED!");
 //            console.log(newPlacement);
 //            redditJSON(newPlacement);
 //            console.log(newPlacement);
@@ -103,7 +111,7 @@
     <div class="container-fluid">
         <div class="col-md-3">
             <div class="panel panel-primary" id="controlPanel">
-                <div class="panel-heading" id="controlPanelHeading">CHOOSE A SUBREDDIT</div>
+                <div class="panel-heading" id="controlPanelHeading">Control Panel</div>
                 <div class="panel-body">
                     <input type="text" id="subreddit" value="pics">
                     <button id="submit" onclick="getImages()">SUBMIT</button>
@@ -112,7 +120,7 @@
                 </div>
             </div>
         </div>
-        <div id="images"></div>
+        <ul class="bxslider" id="images"></ul>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
