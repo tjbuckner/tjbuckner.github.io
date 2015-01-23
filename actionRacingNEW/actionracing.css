@@ -87,13 +87,15 @@ body {
   display: inline !important;
 }
 .post {
+  border: solid #479bfe 3px;
   color: #031e49;
   background-color: #ffffff;
   border-radius: 0px;
   box-shadow: inset 0px 5px 5px rgba(239, 3, 4, 0.4);
+  border-bottom: 5px solid #479bfe !important;
 }
 .panel-heading {
-  background-color: #031e49 !important;
+  background-color: #479bfe !important;
   background-image: none !important;
   font-size: 1.5em;
   text-align: center;
