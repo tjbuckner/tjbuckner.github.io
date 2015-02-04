@@ -29,8 +29,9 @@
 }
 .rowdblue {
   background-color: #031e49;
-  background: url(real_cf.png);
-  background-repeat: repeat;
+  background: url(greenflag_large.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .navbar-brand {
   color: #031e49 !important;
@@ -43,7 +44,7 @@ a {
 }
 a:hover {
   color: #ef0304;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .logo-container {
   max-height: 66px;
@@ -61,9 +62,24 @@ a:hover {
   margin-left: -10px;
   color: #479bfe;
 }
+.postfix {
+  margin-bottom: -10px !important;
+}
 #logo {
   text-decoration: none;
   z-index: 1000000;
+}
+.oldsite {
+  text-align: center;
+  background-color: white;
+  border: solid #479bfe 3px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: -20px;
+  border-bottom: solid #479bfe 5px;
+}
+.fullbump {
+  margin-top: 80%;
 }
 .bumpcarousel {
   margin-top: 80px;

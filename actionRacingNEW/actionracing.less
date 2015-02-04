@@ -44,8 +44,11 @@
 
 .rowdblue {
     background-color: @bgcolor;
-    background: url(real_cf.png);
-    background-repeat: repeat;
+//    background: url(real_cf.png);
+    background: url(greenflag_large.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+//    background-repeat: repeat;
 }
 
 .navbar-brand {
@@ -61,7 +64,7 @@ a {
 
 a:hover {
     color: @red;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .logo-container {
@@ -83,6 +86,10 @@ a:hover {
     color: @lblue;
 }
 
+.postfix {
+    margin-bottom: -10px !important;
+}
+
 #logo {
     text-decoration: none;
 //    text-shadow: 3px 3px 5px fadeout(@dblue, 20%);
@@ -92,6 +99,20 @@ a:hover {
 
 .bump {
 //    margin-top: 1000px;
+}
+
+.oldsite {
+    text-align: center;
+    background-color: white;
+    border: solid @lblue 3px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -20px;
+    border-bottom: solid @lblue 5px;
+}
+
+.fullbump {
+    margin-top: 80%;
 }
 
 .bumpcarousel {
