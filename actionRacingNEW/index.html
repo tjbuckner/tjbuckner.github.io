@@ -117,16 +117,22 @@
                                 To kick it off here's the feature race at TWS, courtesy of the 48 car. This is the premier event, and it's available here in two parts and in two resolutions.
                                 <br>
                                 <br><b>High resolution version:
+<!--
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <video class="embed-responsive-item" src="twsp1g.mp4" controls>
                                     </video>
                                 </div>
-                                <center>PART 1
+                                <center>
+-->
+                                <a href="twsp1g.mp4">PART 1</a>
+
+<!--
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <video class="embed-responsive-item" src="twsp2g.mp4" controls>
                                     </video>
                                 </div>
-                                    PART 2
+-->
+                                <a href="twsp2g.mp4">PART 2</a>
                                 <br>
                                     <br></center>Low resolution version suitable for mobile:
 <!--
@@ -168,7 +174,7 @@
                                 <br>
                                 <br>
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <video class="embed-responsive-item" src="wgo3.wmv" controls type="video/wmv">
+                                    <video class="embed-responsive-item" src="wgo3.mp4" controls type="video/wmv">
                                     </video>
                                 </div><center><h6>Watkins Glen Adrenal Cam 2005, <a href="/wg03rear.wmv">rear view</a>. Same race, different perspective.</h6></center>
                                 <br>
@@ -245,7 +251,7 @@
 
         setTimeout(function(){
             $("#firstpost").animate({
-                marginTop: "45px"
+                marginTop: "40px"
             }, 2500);
         }, 500);
 //        $(".carousel").carousel();
@@ -265,14 +271,17 @@
             $(".bold").css("font-size", "35px");
             $(".thin").css("font-size", "35px");
             $(".logo-container").hide();
+            $(".panel-heading").css("font-size", "1em");
         }
         else if ($windowWidth < 480){
             $(".bold").css("font-size", "40px");
             $(".thin").css("font-size", "40px");
             $(".logo-container").hide();
+            $(".panel-heading").css("font-size", "1em");
         }
         else if ($windowWidth < 775){
             $(".logo-container").hide();
+            $(".panel-heading").css("font-size", "1.5em");
         }
         else if($windowWidth < 992) {
 //            alert("hi!");
@@ -280,12 +289,14 @@
             $(".bold").css("font-size", "42px");
             $(".thin").css("font-size", "42px");
             $(".logo-container").show();
+            $(".panel-heading").css("font-size", "1.5em");
         }
         else {
             $("#secondPanel").addClass("bump");
             $(".bold").css("font-size", "42px");
             $(".thin").css("font-size", "42px");
             $(".logo-container").show();
+            $(".panel-heading").css("font-size", "1.5em");
         }
     }
 
