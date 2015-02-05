@@ -20,7 +20,7 @@
 
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
+        <div class="container-fluid nav-header">
             <div class="navbar-header">
                 <img class="logo-container" src="bmwlogo.png"></img>
                 <a class="navbar-brand" id="logo">
@@ -92,7 +92,7 @@
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-primary">
 
-                    <div class="panel-body main-panel bump fullbump">
+                    <div class="panel-body main-panel bump fullbump" id="firstpost">
                         <div class="panel panel-primary post">
                             <div class="panel-heading">
                                 Roebling 2014 Friday Sprint 100%
@@ -234,26 +234,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script>
 
+    $windowWidth = $(window).width();
+    $windowHeight = $(window).height();
+
+    $startingMarginTop = $windowHeight + 10;
 
     $(document).ready(function(){
         resizeWindow();
-        $(".carousel").carousel();
-    }));
+        $("#firstpost").css("margin-top", $startingMarginTop);
+
+        setTimeout(function(){
+            $("#firstpost").animate({
+                marginTop: "45px"
+            }, 2500);
+        }, 500);
+//        $(".carousel").carousel();
+    });
 
     $(window).resize(function(){
         resizeWindow();
     });
 
     function resizeWindow(){
+
         $windowWidth = $(window).width();
 
 //        alert($windowWidth);
-        if($windowWidth < 992) {
+
+        if ($windowWidth < 360){
+            $(".bold").css("font-size", "35px");
+            $(".thin").css("font-size", "35px");
+            $(".logo-container").hide();
+        }
+        else if ($windowWidth < 480){
+            $(".bold").css("font-size", "40px");
+            $(".thin").css("font-size", "40px");
+            $(".logo-container").hide();
+        }
+        else if ($windowWidth < 775){
+            $(".logo-container").hide();
+        }
+        else if($windowWidth < 992) {
 //            alert("hi!");
             $("#secondPanel").removeClass("bump");
+            $(".bold").css("font-size", "42px");
+            $(".thin").css("font-size", "42px");
+            $(".logo-container").show();
         }
         else {
             $("#secondPanel").addClass("bump");
+            $(".bold").css("font-size", "42px");
+            $(".thin").css("font-size", "42px");
+            $(".logo-container").show();
         }
     }
 

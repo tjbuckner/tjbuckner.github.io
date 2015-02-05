@@ -6,6 +6,10 @@
 @white: #fff;
 @bgcolor: @dblue; //rgb(17, 55, 114); //#5c7b9f; //#BAC9DA
 
+.navbar {
+    max-height: 65px;
+}
+
 .dblueswipe {
     height: 100%;
     width: 30px;
@@ -13,7 +17,10 @@
     position: absolute;
     right: 60px;
     transform: skewX(-30deg);
-//    z-index: -10;
+    -ms-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    z-index: -10;
 }
 
 .redswipe {
@@ -23,7 +30,10 @@
     background-color: @red;
     right: 30px;
     transform: skewX(-30deg);
-//    z-index: -10;
+    -ms-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    z-index: -10;
 }
 
 .lblueswipe {
@@ -33,7 +43,10 @@
     background-color: @lblue;
     right: 90px;
     transform: skewX(-30deg);
-//    z-index: -10;
+    -ms-transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    z-index: -10;
 }
 
 .width100 {
@@ -48,6 +61,7 @@
     background: url(greenflag_large.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 //    background-repeat: repeat;
 }
 
@@ -78,12 +92,20 @@ a:hover {
 .bold {
     font-weight: bold;
     color: @dblue;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px;
 }
 
 .thin {
     font-weight: 300;
-    margin-left: -10px;
+    margin-left: -15px;
     color: @lblue;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
 }
 
 .postfix {
@@ -93,7 +115,7 @@ a:hover {
 #logo {
     text-decoration: none;
 //    text-shadow: 3px 3px 5px fadeout(@dblue, 20%);
-
+//    background: white;
     z-index: 1000000;
 }
 
