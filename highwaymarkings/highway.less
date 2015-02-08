@@ -1,5 +1,5 @@
 //navbar's bg color
-@navbar-color: #264b5f; //#222; //#376076; //rgb(221, 123, 26); //#446579; //
+@navbar-color: #446579; //#222; //#376076; //rgb(221, 123, 26); //#446579; //
 //first row bg color
 @row-img-bgcolor: @navbar-color; //rgb(249, 241, 212); //#1b3c4e;
 //second row bg color
@@ -9,9 +9,11 @@
 @white: white; //#447961;
 @panel-color: @white; //#306F42; //darken(@row-panel-color, 10%); //#D5926B;
 @panel-heading-color: darken(@navbar-color, 10%);
-@footer-bgcolor: @navbar-color; //#F1AD79;
+@footer-bgcolor: darken(@navbar-color, 10%); //#F1AD79;
 @row-img-shadow: #0e1419; //darken(@row-img-bgcolor, 35%);
-@navbar-height: 235px;
+@navbar-height: 225px;
+
+@transparent-white: white; //darken(@navbar-color, 10%); //rgba(255, 255, 255, 0.76);
 
 @red-orange: #964C37;
 @yellow: #967C37;
@@ -19,6 +21,20 @@
  body {
     //    letter-spacing: -0.1px;
 
+}
+
+.section-row {
+    border-bottom: 1px groove @transparent-white;
+//    background-color: darken(@navbar-color, 10%);
+
+//        background: rgba(42,67,82,1);
+//        background: -moz-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
+//        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(42,67,82,1)), color-stop(100%, rgba(68,101,121,1)));
+//        background: -webkit-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
+//        background: -o-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
+//        background: -ms-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
+//        background: linear-gradient(to right, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
+//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a4352', endColorstr='#446579', GradientType=1 );
 }
 .tab {
     text-indent: 40px;
@@ -44,7 +60,7 @@
 .row-img {
     background-color: @row-img-bgcolor;
     padding: 15px;
-    border-bottom: solid@row-img-shadow 2px !important;
+    border-bottom: solid darken(@navbar-color, 15%) 2px !important;
     background-image: url(img/truck.JPG);
     //    background-attachment: scroll;
     background-position: center;
@@ -92,6 +108,9 @@ box-shadow: none !important;
     //    margin: 5px;
 
 }
+.leftline {
+//    border-left: 1px solid @transparent-white;
+}
 .row-panel {
     //    background-color: @row-panel-color;
     //    border-bottom: solid darken(@row-panel-color, 15%) 5px !important;
@@ -138,18 +157,30 @@ box-shadow: none !important;
     margin-bottom: 10px;
     text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
     text-align: center;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    margin-top: 20px;
+    border-bottom: 1px solid @transparent-white;
+//    border-top: 1px solid @transparent-white;
+    margin-top: 5px;
     padding: 2px;
+    padding-bottom: 15px;
 }
 .footer {
     background-color: @footer-bgcolor;
-    min-height: 500px;
+    min-height: 200px;
 }
 .img-logo {
     display: block;
     margin:auto;
+}
+.section-heading {
+    font-size: 5em;
+    color: white;
+    font-family: 'Slabo 27px', serif;
+    text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
+
+
+}
+.nav-container {
+    padding-top: 20px;
 }
 //.logo {
 //    max-height: 50px !important;
@@ -165,9 +196,22 @@ box-shadow: none !important;
 .navbar-inverse .navbar-toggle {
     border-color: darken(@navbar-color, 15%) !important;
 }
+.panel-services {
+    border-radius: 5px !important;
+    border-width: 0px !important;
+
+}
+.panel-services > .panel-body {
+    background-color: lighten(@navbar-color, 5%) !important;
+    border-radius: 5px;
+    border: 5px solid lighten(@navbar-color, 5%) !important;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 5px fadeout(darken(@navbar-color, 10%), 60%) !important;
+}
 @media (max-width: 550px) {
     .navbar-brand {
-        font-size: 2em !important;
+        font-size: 1.5em !important;
     }
 }
 @media (max-width: 400px) {
