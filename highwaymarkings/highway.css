@@ -27,7 +27,7 @@
   height: 650px;
 }
 .row-panel {
-  background-color: #1a3645;
+  background-color: #264b5f;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -42,8 +42,8 @@
 }
 .panel-heading {
   background-image: none !important;
-  border-color: #264b5f !important;
-  background-color: #264b5f !important;
+  border-color: #172e3b !important;
+  background-color: #172e3b !important;
   border-radius: 0px !important;
   color: #000000;
 }
@@ -64,7 +64,7 @@
   background-color: #264b5f !important;
   border-bottom: solid #102028 2px !important;
   background-image: none !important;
-  height: 225px !important;
+  height: 235px !important;
 }
 .nav-container {
   padding-top: 30px;
