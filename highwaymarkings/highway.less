@@ -1,40 +1,20 @@
 //navbar's bg color
-@navbar-color: #446579; //#222; //#376076; //rgb(221, 123, 26); //#446579; //
-//first row bg color
-@row-img-bgcolor: @navbar-color; //rgb(249, 241, 212); //#1b3c4e;
-//second row bg color
-@row-panel-color: @navbar-color; //#1a3645; //darken(rgb(123, 205, 103), 20%);
+@navbar-color: #f5e0c6;//#E8DDCB; //#005777; //rgb(221, 123, 26); //#446579; //
+@navbar-color-dark: #446579; //darken(@navbar-color, 5%);
 //text color second row
 @row-panel-text-color: black;
 @white: white; //#447961;
 @panel-color: @white; //#306F42; //darken(@row-panel-color, 10%); //#D5926B;
-@panel-heading-color: darken(@navbar-color, 10%);
-@footer-bgcolor: darken(@navbar-color, 10%); //#F1AD79;
 @row-img-shadow: #0e1419; //darken(@row-img-bgcolor, 35%);
-@navbar-height: 225px;
-
-@transparent-white: white; //darken(@navbar-color, 10%); //rgba(255, 255, 255, 0.76);
+@navbar-height: 215px;
+@text-dark: @navbar-color-dark;
+@text-light: @navbar-color;
 
 @red-orange: #964C37;
 @yellow: #967C37;
 
- body {
-    //    letter-spacing: -0.1px;
-
-}
-
 .section-row {
-    border-bottom: 1px groove @transparent-white;
-//    background-color: darken(@navbar-color, 10%);
-
-//        background: rgba(42,67,82,1);
-//        background: -moz-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
-//        background: -webkit-gradient(left top, right top, color-stop(0%, rgba(42,67,82,1)), color-stop(100%, rgba(68,101,121,1)));
-//        background: -webkit-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
-//        background: -o-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
-//        background: -ms-linear-gradient(left, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
-//        background: linear-gradient(to right, rgba(42,67,82,1) 0%, rgba(68,101,121,1) 100%);
-//        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a4352', endColorstr='#446579', GradientType=1 );
+    border-bottom: 1px solid @white;
 }
 .tab {
     text-indent: 40px;
@@ -47,10 +27,7 @@
     border-radius: 5px;
     border: solid@row-img-shadow 2px;
     border-bottom-width: 5px;
-    //    margin: 5px;
-
 }
-
 .img-panel {
     margin-top: 100px;
 }
@@ -58,18 +35,17 @@
     text-align: center;
 }
 .row-img {
-    background-color: @row-img-bgcolor;
+    background-color: @navbar-color;
     padding: 15px;
-    border-bottom: solid darken(@navbar-color, 15%) 2px !important;
+//    border-bottom: solid darken(@navbar-color, 15%) 2px !important;
     background-image: url(img/truck.JPG);
-    //    background-attachment: scroll;
     background-position: center;
     background-size: cover;
     height: 650px;
-//    margin-top: @navbar-height;
+    border-bottom-width: 0px !important;
 }
 .row-panel {
-    background-color: @row-panel-color;
+    background-color: @navbar-color;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -81,46 +57,43 @@
     margin-top: 20px;
     border: none !important;
     border-radius: 0px !important;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    box-shadow: none !important;
 }
 .panel-heading {
     background-image: none !important;
-    //    border: solid darken(@panel-color, 10%) 2px !important;
-    //    border-bottom-width: 5px !important;
-    border-color: @panel-heading-color !important;
-    background-color: @panel-heading-color !important;
+    border-color: @navbar-color !important;
+    background-color: @navbar-color !important;
     border-radius: 0px !important;
     color: @row-panel-text-color;
-
 }
 .welcome-heading {
     font-size: 2.5em !important;
     text-align: center;
     font-family: 'Slabo 27px', serif;
-    //    font-weight: bold;
-
+    background-color: @navbar-color-dark !important;
+    color: @white !important;
+    border: 0px !important;
 }
 .footer-panel {
     border: 0px !important;
     background-color: transparent !important;
     color: @row-panel-text-color;
-
-box-shadow: none !important;
-    //    margin: 5px;
-
+    box-shadow: none !important;
+}
+.panel-body {
+    color: @text-dark !important;
 }
 .leftline {
-//    border-left: 1px solid @transparent-white;
-}
-.row-panel {
-    //    background-color: @row-panel-color;
-    //    border-bottom: solid darken(@row-panel-color, 15%) 5px !important;
-
+//    border-left: 1px solid @white;
 }
 .navbar {
     margin-bottom: 0px !important;
     left: 0px;
-    background-color: @navbar-color !important;
-    border-bottom: solid darken(@navbar-color, 15%) 2px !important; //solid darken(@navbar-color, 15%) 5px !important;
+    background-color: @navbar-color-dark !important;
+//    border-bottom: solid darken(@navbar-color, 15%) 2px !important; //solid darken(@navbar-color, 15%) 5px !important;
+    border-bottom-width: 0px !important;
     background-image: none !important;
     height: @navbar-height !important;
 }
@@ -128,43 +101,30 @@ box-shadow: none !important;
     padding-top: 30px;
 }
 .active > a {
-//    background-color: darken(@navbar-color, 15%) !important; // darken(@navbar-color, 15%) !important;
     background-color: @navbar-color !important;
     background-image: none !important;
-    //    text-decoration: underline;
     font-weight: bold;
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
-//    border-top-left-radius: 5px;
-//    border-top-right-radius: 5px;
-}
-.panel-welcome {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33) !important;
 }
 .navbar-inverse .navbar-nav>li>a {
-    color: white !important;
-    text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
-//    border: 1px solid darken(@navbar-color, 15%) !important;
-//    border-bottom: 0px;
-//    border-left: 0px;
-//    border-top-left-radius: 5px;
-//    border-top-right-radius: 5px;
+    color: @white !important;
+//    text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
 }
 .logo {
-    color: white !important;
+    color: @white !important;
     font-family: 'Slabo 27px', serif;
     font-size: 2.5em !important;
     margin-bottom: 10px;
-    text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
+//    text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
     text-align: center;
-    border-bottom: 1px solid @transparent-white;
-//    border-top: 1px solid @transparent-white;
+    border-bottom: 1px solid @white;
     margin-top: 5px;
     padding: 2px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 .footer {
-    background-color: @footer-bgcolor;
+    background-color: @navbar-color-dark;
     min-height: 200px;
 }
 .img-logo {
@@ -173,22 +133,36 @@ box-shadow: none !important;
 }
 .section-heading {
     font-size: 5em;
-    color: white;
+    color: @text-dark;
     font-family: 'Slabo 27px', serif;
     text-shadow: 1px 1px darken(@navbar-color, 15%) !important;
-
-
+}
+.row-panel-two {
+    background-color: @navbar-color-dark !important;
 }
 .nav-container {
     padding-top: 20px;
 }
-//.logo {
-//    max-height: 50px !important;
-//    background-color: white;
-//    border-radius: 10px;
-//    padding: 3px;
-//    display: inline;
-//}
+.panel-loc {
+//    min-height: 300px;
+    border-bottom-left-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    background-color: white !important;
+}
+.panel-employment {
+    background-color: white !important;
+}
+.panel-loc>.panel-heading {
+    margin-bottom: 5px;
+    font-size: .75em !important;
+    color: @text-dark !important;
+    font-weight: bold;
+}
+.dark-heading {
+    background-color: @navbar-color-dark !important;
+    color: @white !important;
+    border: 0px !important;
+}
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
     background-color: darken(@navbar-color, 15%) !important;
@@ -199,15 +173,85 @@ box-shadow: none !important;
 .panel-services {
     border-radius: 5px !important;
     border-width: 0px !important;
-
 }
 .panel-services > .panel-body {
-    background-color: lighten(@navbar-color, 5%) !important;
-    border-radius: 5px;
-    border: 5px solid lighten(@navbar-color, 5%) !important;
+    background-color: @navbar-color; //transparent; //@navbar-color-dark !important;
     color: white;
     font-size: 1.5em;
-    box-shadow: 5px 5px 5px fadeout(darken(@navbar-color, 10%), 60%) !important;
+}
+.panel-services > .panel-two {
+    background-color: @navbar-color-dark; //@navbar-color !important;
+}
+.panel-contactus {
+    background-color: @navbar-color-dark !important;
+    color: white !important;
+    border-radius: 360px !important;
+    Padding: 20px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 1.25em;
+}
+li {
+    margin-left: 15px !important;
+}
+.white-text {
+    color: @white !important;
+}
+.address-title {
+    background-color: @navbar-color-dark !important;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: -20px;
+    font-size: .75em !important;
+}
+.address-body {
+    background-color:   !important;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    color: @text-dark;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: .75em !important;
+}
+.list-heading {
+    margin-left: -20px;
+    font-weight: bold;
+    background-color: @navbar-color-dark;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.panel-for-services {
+    min-height: 300px;
+}
+.panel-heading {
+    text-align: center;
+}
+#knoxville, #valdese, #hendersonville:hover {
+    cursor: pointer;
+}
+#knoxville, #valdese, #hendersonville {
+    font-size: 1em !important;
+}
+.map-panel {
+    background-color: @navbar-color !important;
+    margin-bottom: -10px !important;
+//    min-height: 800px;
+}
+.min-height {
+    min-height: 300px !important;
+}
+.location-row {
+//    margin-top: -30px !important;
+    background-color: transparent !important;
+}
+.section-heading-dark {
+    color: @white !important;
+}
+.section-row-dark {
+
+    border-color: @text-dark !important;
 }
 @media (max-width: 550px) {
     .navbar-brand {
