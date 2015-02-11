@@ -72,18 +72,12 @@ a:hover {
 .bold {
   font-weight: bold;
   color: #031e49;
-  background-color: white;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
   padding: 5px;
 }
 .thin {
   font-weight: 300;
   margin-left: -15px;
   color: #479bfe;
-  background-color: white;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
   padding: 5px;
 }
 .postfix {
@@ -92,6 +86,8 @@ a:hover {
 #logo {
   text-decoration: none;
   z-index: 1000000;
+  -webkit-text-stroke-width: .01em;
+  -webkit-text-stroke-color: white;
 }
 .oldsite {
   text-align: center;
